@@ -1,0 +1,14 @@
+{
+  "name": "oficina-virtual",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "npm test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run typecheck",
+    "dev": "npm run dev -w oficina-web",
+    "build": "npm run build -w oficina-web"
+  }
+}
